@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- MaterializeCSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!-- css shake -->
+    <link rel="stylesheet" type="text/css" href="/csshake.css">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/77bc876b29.js" crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="main.js" defer></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- video js -->
+    <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/7.18.1/video.min.js" defer></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <button id="aplay">Play music</button>
+    <button id="apause">Pause music</button><br>
+    <hr>
+    <button id="vplay">Play video</button>
+    <button id="vpause">Pause video</button>
+
+    <video src="./video/vivaldi.mp4" muted id="myVideo"></video>
+
+    <video id="my-video" class="video-js" controls preload="auto" poster="/25_어때_coconut.gif" data-setup="{}">
+        <source src="./video/vivaldi.mp4" type="video/mp4" />
+        <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a
+            web browser that
+            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+        </p>
+    </video>
+
+    <audio src="./audio/Honey_Bee_01_web.mp3" id="myaudio"></audio>
+</body>
+</html>

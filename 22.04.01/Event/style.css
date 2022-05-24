@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 1600px;
+  width: 100vw;
+  background: #d0d0d0;
+}
+/*# sourceMappingURL=style.css.map */

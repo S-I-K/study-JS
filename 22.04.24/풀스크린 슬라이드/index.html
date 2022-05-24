@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- MaterializeCSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!-- css shake -->
+    <link rel="stylesheet" type="text/css" href="/csshake.css">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/77bc876b29.js" crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="main.js" defer></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <title>풀스크린 슬라이드</title>
+</head>
+<body>
+    <div class="slider" id="slider">
+        <!-- radio button -->
+        <input type="radio" name="slide-radios" class="slide-radio" checked id="slide-radio-1">
+        <input type="radio" name="slide-radios" class="slide-radio" id="slide-radio-2">
+        <input type="radio" name="slide-radios" class="slide-radio" id="slide-radio-3">
+        <input type="radio" name="slide-radios" class="slide-radio" id="slide-radio-4">
+        <!-- radio label -->
+        <div class="pagination">
+            <label for="slide-radio-1" class="active"></label>
+            <label for="slide-radio-2"></label>
+            <label for="slide-radio-3"></label>
+            <label for="slide-radio-4"></label>
+        </div>
+        <!-- slide -->
+        <div class="slideKing">
+            <div class="slideWrapper">
+                <div class="slide" id="slide-1">
+                    <div class="slide-content">
+                        <h1>한옥마을</h1>
+                        <h5>필름사진</h5>
+                        <a href="#">download</a>
+                    </div>
+                    <img src="/img/강아지모자-removebg-preview.png" alt="dogcap">
+                </div>
+                <div class="slide" id="slide-2">
+                    <div class="slide-content">
+                        <h1>부산</h1>
+                        <h5>가고싶다</h5>
+                        <a href="#">download</a>
+                    </div>
+                    <img src="/img/붓산-removebg-preview.png" alt="busan">
+                </div>
+                <div class="slide" id="slide-3">
+                    <div class="slide-content">
+                        <h1>노동근</h1>
+                        <h5>얼빡</h5>
+                        <a href="#">download</a>
+                    </div>
+                    <img src="/img/vv.jpg" alt="bigheadshot">
+                </div>
+                <div class="slide" id="slide-4">
+                    <div class="slide-content">
+                        <h1>벚꽃</h1>
+                        <h5>우오옷</h5>
+                        <a href="#">download</a>
+                    </div>
+                    <img src="/img/그래서노동근어딨는데-removebg-preview.png" alt="princess">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-container {
+    position:absolute;
+    width: 100%;
+}
+
+.slide {
+    position: absolute;
+    font-weight: 200;
+    text-align: center;
+    width: 100%;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.slider-container.animated {
+    transition: left .3s ease-in;
+}
+
+/*
+    prev, next 버튼을 가운데로 겹쳐놓고
+    margin-left 한 값만 이용하여
+    웹 크기가 변해도 제자리 유지할 수 있게 설계
+*/
+#prev,
+#next {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: #d0d0d0;
+    position: absolute;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    top: 50%;
+    left: 50%;
+    transition: all .3s ease-in;
+    opacity: 0.4;
+}
+
+#prev:hover,
+#next:hover {
+    opacity: 1;
+}
+
+#prev {
+    margin-left: -400px;
+}
+
+#next {
+    margin-left: 350px;
+}
+
+#prev.disabled,
+#next.disabled {
+    display: none;
+}

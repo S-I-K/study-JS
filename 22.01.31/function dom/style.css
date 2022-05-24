@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+}
+
+.text_area {
+  width: 500px;
+  border: 1px solid gray;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

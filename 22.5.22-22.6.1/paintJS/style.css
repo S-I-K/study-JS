@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(c:\Users\김재식\Desktop\Web\Coding_Study\JS\22.5.22\paintJS\reset.css);
+@import url(c:\Users\김재식\Desktop\Web\coding\JS\22.5.22-22.6.1\paintJS\reset.css);
 body {
   background-color: #f6f9fc;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -23,42 +23,6 @@ body {
   border-radius: 15px;
   -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
           box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-}
-
-.controls_color:nth-child(1) {
-  background: #2c2c2c;
-}
-
-.controls_color:nth-child(2) {
-  background: #ffff;
-}
-
-.controls_color:nth-child(3) {
-  background: #ff3b30;
-}
-
-.controls_color:nth-child(4) {
-  background: #ff9500;
-}
-
-.controls_color:nth-child(5) {
-  background: #ffcc00;
-}
-
-.controls_color:nth-child(6) {
-  background: #4cd963;
-}
-
-.controls_color:nth-child(7) {
-  background: #5ac8fa;
-}
-
-.controls_color:nth-child(8) {
-  background: #0579ff;
-}
-
-.controls_color:nth-child(9) {
-  background: #5856d6;
 }
 
 .controls {

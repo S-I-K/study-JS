@@ -3,14 +3,26 @@ const todoForm = document.querySelector('.js-todoForm'),
     todoList = document.querySelector('.js-todoList');
 
 const todos_ls = 'todos';
-const todos = [];
+let todos = [];
 
 
+function deleteToDo(event){
+    const btn = this;
+    const li = btn.parentNode;
+    todoList.removeChild(li);
+    
+    const cleanToDos = todos.filter(function(toDo){
+        return toDo.id !== parseInt(li.id);
+    });
+    todos = cleanToDos;
+    saveToDos();
+}
 
 function loadTodos(){
     const loadTodos = localStorage.getItem(todos_ls);
     if(loadTodos !== null){
         const parsedToDos = JSON.parse(loadTodos);
+        /* forEach를 쓰기 위한 array로 위와 같이 변환 */
         parsedToDos.forEach(function(toDo){
             paintToDo(toDo.text);
         });
@@ -22,6 +34,7 @@ function paintToDo(text){
     const span = document.createElement('span');
     const newId = todos.length + 1;
     delBtn.innerText = 'X';
+    delBtn.addEventListener('click', deleteToDo);
     span.innerText = text;
     li.appendChild(span);
     li.appendChild(delBtn);
